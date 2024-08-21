@@ -1,4 +1,4 @@
-module github.com/Yandex-Practicum/42-docker-final
+module github.com/Anatoly8853/42-docker-final-main
 
 go 1.22.0
 
