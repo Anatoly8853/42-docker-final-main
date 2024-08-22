@@ -7,7 +7,7 @@ COPY . .
 RUN go mod download
 
 # Сборка исполняемого файла
-RUN go build -o /ProjectAvp
+RUN go build -o /projectAvp
 
 # Запуск исполняемого файла
-CMD ["./ProjectAvp"]
+CMD ["./projectAvp"]
