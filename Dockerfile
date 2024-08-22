@@ -1,4 +1,10 @@
-FROM golang:1-alpine
+FROM golang:1.22-alpine
 WORKDIR /usr/src/app
 COPY . .
-RUN apk add --no-cache && go mod tidy
+RUN go mod download
+
+# Сборка исполняемого файла
+RUN go build -o /ProjectAvp
+
+# Запуск исполняемого файла
+CMD ["./ProjectAvp"]
